@@ -67,7 +67,7 @@ fn valid_amount(amount: f64) -> Result<f64, String> {
 }
 
 fn valid_network(network: &str) -> Result<&str, String> {
-   match network {
+    match network {
         "bitcoin" | "solana" => Ok(network),
         _ => Err(String::from("Réseau inconnu")),
     }
